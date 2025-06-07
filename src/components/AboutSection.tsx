@@ -1,6 +1,5 @@
-
 import { Card, CardContent } from '@/components/ui/card';
-import { Users, Award, Calendar } from 'lucide-react';
+import { Users, Calendar } from 'lucide-react';
 
 const AboutSection = () => {
   return (
@@ -38,26 +37,15 @@ const AboutSection = () => {
         {/* Leadership Section - محسّن */}
         <div className="mb-16">
           <h3 className="text-3xl font-bold text-center text-primary mb-12">قيادة المدرسة</h3>
-          <div className="grid md:grid-cols-3 gap-8 animate-fade-in">
+          <div className="grid md:grid-cols-2 gap-8 animate-fade-in justify-center items-center text-center">
             <Card className="card-hover text-center bg-gradient-to-br from-primary/5 to-primary/10 border border-primary/20">
               <CardContent className="p-8">
                 <div className="w-20 h-20 bg-gradient-to-br from-primary to-primary/80 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
                   <Users className="h-10 w-10 text-white" />
                 </div>
-                <h4 className="text-2xl font-bold text-primary mb-2">أ/ حسن وليد طه</h4>
+                <h4 className="text-2xl font-bold text-primary mb-2">وليد طه</h4>
                 <p className="text-lg font-semibold text-accent mb-3">رئيس مجلس الإدارة</p>
                 <p className="text-muted-foreground">يقود المدرسة برؤية طموحة نحو التميز التعليمي والابتكار</p>
-              </CardContent>
-            </Card>
-
-            <Card className="card-hover text-center bg-gradient-to-br from-accent/5 to-accent/10 border border-accent/20">
-              <CardContent className="p-8">
-                <div className="w-20 h-20 bg-gradient-to-br from-accent to-accent/80 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
-                  <Award className="h-10 w-10 text-white" />
-                </div>
-                <h4 className="text-2xl font-bold text-primary mb-2">أ/ سميرة طه</h4>
-                <p className="text-lg font-semibold text-accent mb-3">نائب رئيس مجلس الإدارة</p>
-                <p className="text-muted-foreground">تشرف على التطوير الأكاديمي والبرامج التعليمية المتقدمة</p>
               </CardContent>
             </Card>
 

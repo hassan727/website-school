@@ -8,8 +8,8 @@ const heroImages = [
 		alt: 'حفل مدرسي - صورة 1',
 	},
 	{
-		src: '/WhatsApp Image 2025-06-05 at 1.18.20 PM (1).jpeg',
-		alt: 'حفل مدرسي - صورة 2',
+		src: '/heba.jpeg',
+		alt: 'صورة مميزة - هبة',
 	},
 	{
 		src: '/WhatsApp Image 2025-06-06 at 7.41.18 PM (1).jpeg',
@@ -49,7 +49,7 @@ const HeroSection = () => {
 					</div>
 
 					<div className="animate-scale-in">
-						<div className="relative w-[150%] max-w-none mx-auto" style={{ left: '50%', transform: 'translateX(-25%)' }}>
+						<div className="relative w-full max-w-2xl mx-auto sm:max-w-3xl md:max-w-4xl lg:max-w-full">
 							<Carousel interval={4000} indicators={true} controls={true}>
 								{heroImages.map((img, idx) => (
 									<Carousel.Item key={idx}>
@@ -57,7 +57,7 @@ const HeroSection = () => {
 											src={img.src}
 											alt={img.alt}
 											className="rounded-2xl shadow-2xl w-full object-cover object-center transition-all duration-300"
-											style={{ aspectRatio: '16/7', height: '70vh', maxWidth: '100%' }}
+											style={{ aspectRatio: '16/7', height: '40vh', maxHeight: '350px', minHeight: '180px', maxWidth: '100%' }}
 										/>
 									</Carousel.Item>
 								))}
